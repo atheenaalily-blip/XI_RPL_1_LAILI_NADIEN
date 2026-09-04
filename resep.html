@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Ayam Kecap Pedas</title>
+    <link rel="stylesheet" href="tampilan.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #fff3e0;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+            padding: 35px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #c0392b;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        h1:hover {
+            color: #e67e22;
+        }
+
+        .gambar {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .gambar img {
+            width: 320px;
+            height: 210px;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: 0.4s;
+        }
+
+        .gambar img:hover {
+            transform: scale(1.05);
+            border-radius: 50%;
+        }
+
+        .box {
+            background-color: #f4b183;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            color: #7b241c;
+            margin-bottom: 15px;
+        }
+
+        ul,
+        ol {
+            margin-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .pesan {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        button {
+            background-color: #c0392b;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #e67e22;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+      <nav class="navbar">
+        <div class="logo">Web RPL</div>
+        <ul class="nav-links">
+                <li><a href="index.html">Halaman Utama</a><li>
+                <li><a href="resep.html">Resep Makanan</a></li>
+                <li><a href="#">Surat Izin</a></li>
+                <li><a href="Kontak_Anggota.html">Kontak Anggota</a></li>
+
+        </ul>            
+    </nav>
+
+    <div class="container">
+
+        <h1>Ayam Kecap Pedas</h1>
+
+        <div class="gambar">
+            <img src="https://i0.wp.com/resepkoki.id/wp-content/uploads/2020/09/Resep-Ayam-Kecap-Pedas-1.jpg?fit=389%2C433&ssl=1="Ayam Kecap Pedas">
+        </div>
+
+        <div class="box">
+
+            <h2>Bahan-bahan</h2>
+
+            <ul>
+                <li>500 gram ayam</li>
+                <li>4 siung bawang merah</li>
+                <li>3 siung bawang putih</li>
+                <li>5 buah cabai merah</li>
+                <li>3 sendok makan kecap manis</li>
+                <li>1 batang daun bawang</li>
+                <li>200 ml air</li>
+                <li>Garam secukupnya</li>
+                <li>Minyak goreng secukupnya</li>
+            </ul>
+
+        </div>
+
+        <div class="box">
+
+            <h2>Cara Membuat</h2>
+
+            <ol>
+                <li>Potong ayam menjadi beberapa bagian.</li>
+                <li>Panaskan minyak dalam wajan.</li>
+                <li>Tumis bawang merah dan bawang putih hingga harum.</li>
+                <li>Masukkan cabai dan ayam.</li>
+                <li>Tambahkan kecap manis dan air.</li>
+                <li>Tambahkan garam secukupnya.</li>
+                <li>Masak hingga ayam matang dan bumbu meresap.</li>
+                <li>Tambahkan daun bawang.</li>
+                <li>Angkat dan sajikan.</li>
+            </ol>
+
+        </div>
+
+        <div class="box">
+
+            <h2>Tips</h2>
+
+            <p>
+                Gunakan api kecil saat memasak agar bumbu kecap
+                lebih meresap ke dalam ayam.
+            </p>
+
+        </div>
+       
+        <!-- Tombol Pesan -->
+          <div class="tombol pesan">
+
+              <button class="btn-pesan" onclick="pesanSekarang()">
+                Pesan Sekarang
+            </button>
+
+        </div>
+
+    </div>
+
+    <!--Memanggil file Javascript-->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
