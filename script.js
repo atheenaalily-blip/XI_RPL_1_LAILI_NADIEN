@@ -1,45 +1,27 @@
 function tampilkanNama(){
-    document.getElementById("namaAnggota").innerHTML=`
-    <ol style="list-style-type: decimal; padding-left:5%;">
-        <li>Laili (atheenaalily@gmail.com)</li>
-        <li>Nadien (nadienqurrotulaeni@gmail.com)</li>
-    </ol>
+    document.getElementById("namaAnggota").innerHTML = `
+        <ol style="list-style-type: decimal; padding-left:5%;">
+            <li>Laili Annisa (Laili@gmail.com)</li>
+            <li>Nadien Qurrotul(Nadien@gmail.com)</li>
+        </ol>
 
-   <button onclick="location.reload()">Tutup Kembali</button>
-   `;
-}
-// Fungsi untuk zoom foto
-function zoomFoto() {
-
-    let foto = document.getElementById("fotoMakanan");
-
-    foto.classList.toggle("zoom");
-
+        <button onclick="location.reload()">
+            Tutup Kembali
+        </button>
+    `;
 }
 
 
-// Fungsi untuk mengubah warna judul
-function ubahWarna() {
+function validasiForm(){
+    var tglMulai = document.getElementById("tgl_mulai").value;
+    var tglSelesai = document.getElementById("tgl_selesai").value;
 
-    let judul = document.getElementById("judulResep");
-
-    if (judul.style.color === "rgb(18, 97, 71)") {
-
-        judul.style.color = "black";
-
-    } else {
-
-        judul.style.color = "rgb(18, 97, 71)";
-
+    if(new Date(tglSelesai) > new Date(tglMulai)){
+        alert('Tanggal Selesai Tidak Boleh Lebih Awal Dari Tanggal Mulai');
     }
-
 }
 
 
-// Fungsi tombol pesan
-function pesan() {
-
-    document.getElementById("teksPesan").innerHTML =
-        "Pesanan berhasil! Akan segera kami proses.";
-
+function pesanSekarang() {
+    alert("Akan segera Hadir");
 }

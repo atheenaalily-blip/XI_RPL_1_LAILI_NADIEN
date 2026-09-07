@@ -1,147 +1,58 @@
 *{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
-/* membuat tampilan utama navbar */
-.navbar{
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: #b3e5fc;
-color: #627d98;
-padding: 1rem 2rem;
-}
-
-/*membuat tampilan logo*/
-.navbar .logo{
-font-size: 2rem;
-font-weight: bold;
-}
-
-/*membuat tampilan daftar menu*/
-.nav-links{
-list-style: none;
-display: flex;
-gap: 25px;
-}
-
-/*membuat tampilan teks link*/
-.nav-links a{
-color: #627d98;
-text-decoration: none;
-font-size: 16px;
-font-family: Impact;
-}
-/*membuat tampilan hover*/
-.nav-links a:hover{
-background-color: whitesmoke;
-color: #627d98;
-}
-
-#items{
-font-size: 16px;
-font-family: Impact;
-color: #b3e5fc;
-}
-/* Background halaman */
-body {
-    background-color: rgb(85, 92, 92);
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-/* Navbar */
-.navbar {
+/*Membuat Tampilan Utama Navbar*/
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    background-color: white;
+    background-color: #b3e5fc;
+    color: #1e3a5f;
+    padding: 16px 32px;
 }
 
-
-/* Logo */
-.logo {
+/*Membuat Tampilan Logo*/
+.navbar .logo{
     font-size: 25px;
     font-weight: bold;
 }
 
-
-/* Menu navbar */
-.nav-links {
-    display: flex;
+/*Membuat Tampilan Daftar Menu*/
+.nav-links{
     list-style: none;
+    display: flex;
     gap: 25px;
 }
 
-
-/* Link navbar */
-.nav-links a {
+/*Membuat Tampilan teks link*/
+.nav-links a{
+    color: #1e3a5f;
     text-decoration: none;
-    color: black;
-    font-weight: bold;
+    font-size: 16px;
+    font-family: impact;
 }
 
-
-/* Efek saat kursor di navbar */
-.nav-links a:hover {
-    color: rgb(18, 97, 71);
+/*Membuat Tampilan Hover*/
+.nav-links a:hover{
+    background-color: whitesmoke;
+    color: #1e3a5f;
 }
 
-
-/* Foto makanan */
-#fotoMakanan {
-    width: 300px;
-    margin-top: 25px;
-    cursor: pointer;
-    transition: 0.3s;
+#items{
+    font-size: 16px;
+    font-family: impact;
+    color: #b3e5fc;
 }
 
-
-/* Efek hover foto */
-#fotoMakanan:hover {
-    transform: scale(1.05);
-}
-
-
-/* Foto ketika di-zoom */
-#fotoMakanan.zoom {
-    transform: scale(1.5);
-}
-
-
-/* Judul resep */
-#judulResep {
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-
-/* Efek hover judul */
-#judulResep:hover {
-    color: rgb(18, 97, 71);
-}
-
-
-/* Bagian cara membuat */
-.bg-2 {
-    padding: 20px;
-}
-
-
-/* Tombol pesan */
-button {
-    padding: 10px 25px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-}
-
-
-/* Efek tombol */
-button:hover {
-    background-color: #B3E5FC;
-    color: white;
+/* membuat isi halaman berada di tengah */
+.home-container {
+    min-height: calc(100vh - 73px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
